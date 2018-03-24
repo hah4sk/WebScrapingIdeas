@@ -44,7 +44,8 @@ def getRepoDump(base_url, filename):
                 print(href)
                 subdir_url = "https://github.com" + href
                 scrapeSubDir(subdir_url, f, "-----")
-        f.write("##########################################\n")
+        for i in range (0, 20): f.write("#")
+        f.write("\n")
 
 
 def scrapeSubDir(directory_url, f, indent):
